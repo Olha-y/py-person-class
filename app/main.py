@@ -1,13 +1,13 @@
 class Person:
     people = {}
 
-    def __init__(self, name: str, age: int):
+    def __init__(self, name: str, age: int) -> None:
         self.name = name
         self.age = age
 
         Person.people[name] = self
 
-    def set_spouse(self, spouse_name):
+    def set_spouse(self, spouse_name: str) -> str:
 
         if spouse_name is None:
             return
